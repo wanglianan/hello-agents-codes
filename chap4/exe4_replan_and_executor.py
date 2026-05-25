@@ -34,6 +34,7 @@ class Planner:
         except Exception as e:
             print(f"❌ 解析计划时发生未知错误: {e}")
             return []
+
     def replan(self, question: str, original_plan: list[str],
                completed_steps: str, failed_step: str,
                failure_reason: str) -> list[str]:
